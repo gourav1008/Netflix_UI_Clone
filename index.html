@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Netflix Clone - Watch unlimited movies, TV shows, and more." />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+  <header class="main">
+    <nav class="nav">
+      <div class="logo">
+        <img src="./assets/img/logo.svg" alt="Netflix Logo" />
+      </div>
+      <div class="flex">
+        <div class="dropdown">
+          <select name="language" id="language-select" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+          </select>
+        </div>
+        <div class="login">
+          <button type="button">Sign In</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="content">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="input">
+        <input type="email" placeholder="Email address" required />
+        <button type="button" class="started">Get Started &gt;</button>
+      </div>
+    </section>
+  </header>
+
+  <div class="border"></div>
+
+  <main>
+    <section class="trending-section">
+      <h2>Trending Now</h2>
+      <div class="trending-container">
+        <div class="trending-row">
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABTNYgUpzLVlth7tn5W_mcgt9ndofJICNYx-AjX8AON_2VcaTwaM5ekc6Z8LhR8p-bRKXEfoAYBnvY9SDi-0WoNYS886hvBk6t2nT6Ops-B8X26OrlXicenyZQkFLFbThkqRodh56gnXDBS75c5s0.webp?r=8b9"
+              alt="Movie 1" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Extraction 2</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABWY2l29_Q4fcWvurVVPaQskEeybW5H-pz0CEcX59H0yDREVUcHOPdlpKjhb-AXYmIFt8ae6097xK17E5IGOUfagQ-SJzJTwRc_lNWC_j0pRPan0IziFLF6c2APQ_i2xlNlvvar-fiNgYE0jhcgFW.webp?r=82c"
+              alt="Movie 2" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Money Heist</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABWtrXpiGXMDtTAZFKT_aMqGTWEJp_OJhuqQsf4Pm8LH7v7JrOiXO8EAILWNWP1mn3KPxSUugHZvVyCQ79olc3FMvVlj0StIT2ePIX2dv--1kmd4YTZx2dunSwCH7yQpkZwimnHZKgm_PPfTchza4.jpg?r=4fc"
+              alt="Movie 3" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Stranger Things</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABUCRF9JkqcVu18cEqVW6xTJ90YoeiQE-WIrIuyD36upfbFjnkSJz79VYAwhLaT20jSNbZcDRamMmNFU7nEmOQ59N-x5MFvhQvttTOzrm2ld6vw-fbiJys7ve_htngLl9xeqNQIAVJ0YsO7n8iv_521pnd70YKvxNodq411nJW87ZeYRrjZJxZhGo7ArzVY1WSBtJg92aawWzFojD.jpg?r=127"
+              alt="Movie 4" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">The Witcher</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABfeiYU20wugYiWVGVr10bbtHpvPATKPNIUiPs4VZDY2YqE6SDSKgMUB3YgroDIPGDjxLpZCHKm1oiA4Cb80Z0TCci4epRSCZiCqDGmNWwqgT64xoShk0KMjhpmgc29Rgwbe8AMuPfpDk9tMXpWe_.jpg?r=490"
+              alt="Movie 5" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Wednesday</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABSNUealUkq9pmlq7ZaNDiuEws45DMMJetS21_P1EIBuIz0DqRaxEzEIMJYq5zFO_Xvj8Qpa4sNk1gSABrMl6fdmSwe_bj1zJhYn17ZtGAFtgIdPO91UZ0WGc-VUj1yWsitX4jVOVRNIubExoX1CqB5BofsKnScFoGrSHD_4xUvALxbszvtuGBXqaq79muDNr1kzYSQs8Ke-lwS-6.jpg?r=149"
+              alt="Movie 6" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Squid Game</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABW9fXSjJo6VM_Buyk7bmyP9t7r1u55Ngof9tQC9-xMFW0Dv0pOlA4B4hsBKzi2L-Vv398Rlfb9mgvYjlFEHqydc3lMCz8Gh3LKKaL0qe4gcextZoQBTBANL_eQ3VGDxZFWkxCb4x_-ri8W8qqtdg.jpg?r=9bb"
+              alt="Movie 7" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Dark</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABTNYgUpzLVlth7tn5W_mcgt9ndofJICNYx-AjX8AON_2VcaTwaM5ekc6Z8LhR8p-bRKXEfoAYBnvY9SDi-0WoNYS886hvBk6t2nT6Ops-B8X26OrlXicenyZQkFLFbThkqRodh56gnXDBS75c5s0.webp?r=8b9"
+              alt="Extraction 2" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Extraction 2</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABTNYgUpzLVlth7tn5W_mcgt9ndofJICNYx-AjX8AON_2VcaTwaM5ekc6Z8LhR8p-bRKXEfoAYBnvY9SDi-0WoNYS886hvBk6t2nT6Ops-B8X26OrlXicenyZQkFLFbThkqRodh56gnXDBS75c5s0.webp?r=8b9"
+              alt="Extraction 2" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-title">Extraction 2</span>
+              <button class="card-play" aria-label="Play"><span>&#9654;</span></button>
+            </div>
+          </article>
+          <!-- Last card removed -->
+        </div>
+      </div>
+    </section>
+
+    <div class="border"></div>
+
+    <section class="features-section">
+      <div class="features-container">
+        <div class="feature-item">
+          <div class="text-content">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+          </div>
+          <div class="media-content">
+            <div class="tv-container">
+              <img class="tv-frame" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                alt="TV" />
+              <video class="tv-video" autoplay loop muted playsinline>
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                  type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="text-content">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favorites easily and always have something to watch.</p>
+          </div>
+          <div class="media-content">
+            <div class="mobile-container">
+              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                alt="Mobile" />
+              <div class="download-animation">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                  alt="Stranger Things" />
+                <div class="download-text">
+                  <p>Stranger Things</p>
+                  <p>Downloading...</p>
+                </div>
+                <div class="download-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <p>Questions? Call 1-844-505-2993</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <a href="#">FAQ</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Ways to Watch</a>
+          <a href="#">Corporate Information</a>
+          <a href="#">Only on Netflix</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Help Center</a>
+          <a href="#">Jobs</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Account</a>
+          <a href="#">Redeem Gift Cards</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Media Center</a>
+          <a href="#">Buy Gift Cards</a>
+          <a href="#">Cookie Preferences</a>
+          <a href="#">Legal Notices</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="dropdown">
+          <select name="language" id="footer-language-select" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+          </select>
+        </div>
+        <p>Netflix India</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
